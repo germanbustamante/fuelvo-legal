@@ -10,7 +10,7 @@
 <main>
 <nav><a href="../">Fuelvo</a><a href="../es/privacy/">Español</a></nav>
 <h1>Fuelvo privacy policy</h1>
-<p class="muted">Last updated 2 October 2026</p>
+<p class="muted">Last updated 5 October 2026</p>
 
 <p>Fuelvo is an app to compare fuel prices at nearby stations. It has no accounts and no ads, and it
 never sells or shares your data for advertising. This policy explains what the app handles, why, and
@@ -23,15 +23,18 @@ the choices you have.</p>
 <table>
 <tr><th>Data</th><th>Why</th><th>Legal basis</th></tr>
 <tr><td><strong>Your location</strong>, only if you allow it, while the app is open</td><td>To find the stations around you. The coordinates of the search are sent to our server and used to answer it; they are not stored with anything that identifies you, and never go to analytics.</td><td>Providing the service you ask for</td></tr>
-<tr><td><strong>Searches and the map area</strong> you look at</td><td>To return stations and prices. Like any server, ours sees your IP address, kept in its technical logs for a few days for security.</td><td>Providing the service; legitimate interest (security)</td></tr>
+<tr><td><strong>What you search for and the map area</strong> you look at: the province you pick, the area of the map and, from its third character, the text you type in the search box</td><td>To return stations and prices. The search text is not written to our logs or our database; the answer can stay in our server's memory for up to an hour, so the same search is not run twice, with nothing that says who asked. Like any server, ours sees your IP address, kept in its technical logs for a few days for security.</td><td>Providing the service; legitimate interest (security)</td></tr>
 <tr><td><strong>Usage statistics</strong>, only if you agree: screens opened and actions taken (for example the fuel chosen or a station opened), with a random installation id, the platform and your default fuel</td><td>To understand what to improve. They never include your location, name or contact details, and no advertising identifier is collected.</td><td>Your consent, which you can withdraw at any time</td></tr>
 <tr><td><strong>Price alerts</strong>, only if you create one: the station, fuel and price you choose, plus your phone's notification address (its push token), the app's language and time zone, the platform and the app version</td><td>To check each new price against your alerts and notify you, in your language and never at night. Kept on our server under a random identifier of its own, never with your location or the usage-statistics id.</td><td>Providing the service you ask for</td></tr>
-<tr><td><strong>News notifications</strong>, only if you turn them on</td><td>To send Fuelvo's own notices, such as what's new or reminders before long weekends, at most twice a month. Your phone joins a Firebase Cloud Messaging list for its language; our server doesn't learn who joined.</td><td>Your consent, which you can withdraw in Settings</td></tr>
+<tr><td><strong>General notifications</strong>, only if you turn them on</td><td>To send Fuelvo's own notices, such as what's new, price summaries or reminders before long weekends, at most once a week. Your phone joins a Firebase Cloud Messaging list for its language; our server doesn't learn who joined.</td><td>Your consent, which you can withdraw in Profile → Notifications</td></tr>
 <tr><td><strong>Crash reports</strong>: what went wrong, device model and system version</td><td>To find and fix errors.</td><td>Legitimate interest in keeping the app working</td></tr>
 </table>
 
 <p>Your preferences, favourite stations and recently loaded prices are stored only on your device,
-along with a copy of your price alerts. Uninstalling the app deletes them.</p>
+along with a copy of your price alerts. Uninstalling the app deletes them. If your phone's own backup
+is on (Google's or iCloud), it may include them, as it does other apps' data; on Android the backup
+never includes the identifier our server gave your phone for price alerts, so a restored phone
+starts without alerts.</p>
 
 <h2>Who else processes it</h2>
 <ul>
@@ -52,11 +55,14 @@ your device: until you delete the app or its data.</p>
 <h2>Your choices and rights</h2>
 <ul>
 <li>You decide on usage statistics when you first open the app, and can change it at any time in
-Settings → Privacy → Share usage statistics.</li>
+Profile → Privacy → Share usage statistics. Turning it off stops the sending at once and erases the
+random installation id from your phone: if you turn it on again later, it starts with a new one, not
+linked to the earlier statistics.</li>
 <li>Location is optional: the app works by choosing a province instead.</li>
-<li>Notifications are optional. A price alert is removed from its station's bell. Settings →
-Notifications → Turn off all price alerts deletes every alert and your phone's notification address
-from our server. News is off until you turn it on there, and you can turn it off the same way.</li>
+<li>Notifications are optional. A price alert is removed from its station's bell, or by removing
+the station from your favourites. Profile → Notifications → Turn off all price alerts deletes every
+alert and your phone's notification address from our server. General notifications are off until you
+turn them on there, and you can turn them off the same way.</li>
 <li>You can ask for access to, correction or deletion of your data, restrict or object to its use,
 or ask for a copy, by writing to <a href="mailto:fuelvo.support@gmail.com">fuelvo.support@gmail.com</a>. As we don't know who you
 are, include the installation id if you have it, or tell us what you need and we will help.</li>
