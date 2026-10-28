@@ -1,8 +1,16 @@
 # fuelvo-legal
 
-The public pages of the Fuelvo app: its privacy policy (English and Spanish) and a support page,
-served by GitHub Pages at https://germanbustamante.github.io/fuelvo-legal/. The app links here from
-Profile → Privacy and its onboarding (`LegalLinks` in fuelvo-app), and the store listings use these URLs.
+Redirects only. The pages that lived here (a support page and the privacy policy, in English and
+Spanish) moved to https://fuelvo.app, the site built from `fuelvo-web`:
 
-Plain HTML, no build step. The policy follows fuelvo-app's `docs/PRIVACY.md`, the engineering
-inventory of what the app collects: change both together, and update the date at the top.
+| Here                     | Now                                 |
+| ------------------------ | ----------------------------------- |
+| `/fuelvo-legal/`         | https://fuelvo.app/soporte/         |
+| `/fuelvo-legal/privacy/` | https://fuelvo.app/en/privacy/      |
+| `/fuelvo-legal/es/`      | https://fuelvo.app/soporte/         |
+| `/fuelvo-legal/es/privacy/` | https://fuelvo.app/privacidad/   |
+
+Never delete this repository or turn off its GitHub Pages: app builds 1.0 and 1.1 link here
+(`LegalLinks` in fuelvo-app), and so may the store listings. Each page is a `<meta http-equiv="refresh">`
+plus `rel="canonical"`, since GitHub Pages cannot send a 301. The policy itself is edited in
+`fuelvo-web` now (`src/pages/privacidad/`, `src/pages/en/privacy/`).
